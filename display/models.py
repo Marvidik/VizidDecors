@@ -40,7 +40,7 @@ class Meeting(models.Model):
     name=models.CharField(max_length=50)
     email = models.EmailField()
     phone= models.CharField(max_length=11)
-    date = models.DateField(default=timezone.now())
+    date = models.DateField()
     reason=models.TextField(max_length=100)
 
     def __str__(self):
